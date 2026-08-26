@@ -55,3 +55,29 @@ print(days_slice)
 # You can get a reverse of a list using the following:
 days_reverse = days[::-1]
 print(days_reverse) 
+
+# You can even assign values using slicing
+slice_assign = [0] * 10 # Start with a list of default values to make sure the positions exist
+list_a = [1, 3, 5, 7, 9]
+list_b = [2, 4, 6, 8, 10]
+
+slice_assign[0::2] = list_a
+slice_assign[1::2] = list_b
+print(slice_assign)
+
+# You can insert values as well without overwriting any values
+list_a = [1, 2, 3, 4, 5, 6, 7]
+list_b = [100, 200, 300]
+
+# Note how the start and end are the same
+# This will select an 'empty slice' and basically just insert all values at
+# the given postion.
+list_a[3:3] = list_b
+print(list_a)
+
+# You can even delete a whole chuck of items from your list
+list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# I want to remove values 4 6 8 and 10 from the list
+del list_a[3::2]
+print(list_a)
