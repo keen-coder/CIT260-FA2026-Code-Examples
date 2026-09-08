@@ -2,6 +2,7 @@
 # used with a list.
 
 def main():
+
     # Create a list of product numbers.
     prod_nums = ['V475', 'F987', 'Q143', 'R688']
 

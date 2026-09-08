@@ -29,6 +29,7 @@ for row in range(0, len(matrix)):
     for col in range(0, len(matrix[row])):
         print(matrix[row][col], end=' ')
     print()
+
 print()
 
 
@@ -44,26 +45,26 @@ for row in range(0, len(matrix)):
     print()
 print()
 
-# Printing a 2D list col by col when the dimensions are not uniform
+# # Printing a 2D list col by col when the dimensions are not uniform
 
-matrix = [[1, 2, 3],
-          [4, 5],
-          [6],
-          [7, 8, 9, 10]]
+# matrix = [[1, 2, 3],
+#           [4, 5],
+#           [6],
+#           [7, 8, 9, 10]]
 
-# Find the number of columns
-# Use a list comprehension to create a list of row lengths
-# Find the maximum value from the resulting list comprehension
-print([len(row) for row in matrix])
-max_cols = max([len(row) for row in matrix])
+# # Find the number of columns
+# # Use a list comprehension to create a list of row lengths
+# # Find the maximum value from the resulting list comprehension
+# print([len(row) for row in matrix])
+# max_cols = max([len(row) for row in matrix])
 
-for col in range(max_cols):
-    for row in range(len(matrix)):
-        if col < len(matrix[row]):  # only print if element exists
-            print(matrix[row][col], end=" ")
-    print()
+# for col in range(max_cols):
+#     for row in range(len(matrix)):
+#         if col < len(matrix[row]):  # only print if element exists
+#             print(matrix[row][col], end=" ")
+#     print()
 
-# Col by Col non-jagged
+# Col by Col non-jagged, non-uniform
 matrix = [[1, 2, 3],
           [4, 5, 6],
           [7, 8, 9],

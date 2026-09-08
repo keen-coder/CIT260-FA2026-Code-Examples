@@ -17,7 +17,9 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
         'Saturday']
 
 days_one = days[1:2]
+day = days[1]
 print(days_one)
+print(day)
 
 # Get the days from Monday to Thursday
 days_slice = days[1:5]
@@ -49,6 +51,8 @@ print(f'days =\t\t{days}')
 print(f'days_copy =\t{days_copy}')
 
 # Negative values can be used to get positions relative to the end of the list
+days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
+        'Saturday']
 days_slice = days[-5:-1] # [2, 6]
 print(days_slice)
 
@@ -60,10 +64,15 @@ print(days_reverse)
 slice_assign = [0] * 10 # Start with a list of default values to make sure the positions exist
 list_a = [1, 3, 5, 7, 9]
 list_b = [2, 4, 6, 8, 10]
-
+print(slice_assign)
 slice_assign[0::2] = list_a
+print(slice_assign)
 slice_assign[1::2] = list_b
 print(slice_assign)
+
+listA = [1, 2, 3, 4, 5]
+listA[1:4] = ['red', 'green', 'blue']
+print(listA)
 
 # You can insert values as well without overwriting any values
 list_a = [1, 2, 3, 4, 5, 6, 7]
