@@ -84,18 +84,23 @@ cols = 7
 
 # Create a table with default values with 5 rows and 10 columns
 # You can use a loop later to populate the table with other data.
-table = [[0]*cols]*rows
+table = table = [[0] * cols for x in range(rows)]
 
+table[0][0] = 100
+# Print the table
 for row in range(len(table)):
     for col in range(len(table[row])):
         print(table[row][col],'', end='')
     print()
 
-table = []
 
+# Another way to create a table with default values is to use
+# Nested loops and append()
+table = []
 for row in range(rows):
     table.append([])
     for col in range(cols):
         table[row].append(0)
 
+table[0][0] = 100
 print(table)
