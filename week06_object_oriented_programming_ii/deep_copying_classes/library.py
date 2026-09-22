@@ -2,10 +2,6 @@ from book import Book
 from copy import deepcopy
 
 class Library:
-    """
-    Represents a library.
-    """
-
     def __init__(self, name: str, books: list[Book]):
         self.__name = name
         self.__books = books
@@ -23,4 +19,4 @@ class Library:
        return deepcopy(self)
 
     def __str__(self):
-        return f'Library: {self.__name}, {self.__books}'
+        return f'Library: {self.__name}, {', '.join(self.__books)}'
