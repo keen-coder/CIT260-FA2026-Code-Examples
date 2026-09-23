@@ -76,5 +76,5 @@ class Cat:
         return output
     
     def __repr__(self):
-        str_rep = f'Cat(name={repr(self.__name)}, age={repr(self.__age)}, color={repr(self.__color)}, gender={repr(self.__gender)}, fur_length={repr(self.__fur_length)})'
+        str_rep = f'Cat(name={self.__name}, age={repr(self.__age)}, color={repr(self.__color)}, gender={repr(self.__gender)}, fur_length={repr(self.__fur_length)})'
         return str_rep

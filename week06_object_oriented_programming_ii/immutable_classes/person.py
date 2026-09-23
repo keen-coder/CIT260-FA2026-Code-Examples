@@ -44,4 +44,6 @@ class Person:
                f"Age: {self.__age}\n"  + \
                f"Birthday: {self.__birthday}\n"  + \
                f"Favorite Colors: {', '.join(self.__fav_colors)}"
-        
+
+    def __repr__(self):
+        return f'Person(name={repr(self.__name)}, age={repr(self.__age)}, birthday={repr(self.__birthday)}, fav_colors={repr(self.__fav_colors)})'

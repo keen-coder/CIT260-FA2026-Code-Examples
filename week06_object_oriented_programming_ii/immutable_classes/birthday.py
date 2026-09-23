@@ -29,4 +29,4 @@ class Birthday:
         return f"{self.__month}/{self.__day}/{self.__year}"
 
     def __repr__(self):
-        return self.__str__()
+        return f'Birthday(month={repr(self.__month)},day={repr(self.__day)},year={repr(self.__year)})'
