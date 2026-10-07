@@ -1,6 +1,6 @@
 import pickle
 
-FILE_PATH = 'week08_sets_object_io_oop_i/object_serialization/data_files/'
+FILE_PATH = 'week08_dictionaries_sets_advanced_io/object_serialization/data_files/'
 
 # Serializing a dictionary and writing to a file ==============================
 

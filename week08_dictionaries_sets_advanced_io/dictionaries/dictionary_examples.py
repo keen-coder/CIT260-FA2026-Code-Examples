@@ -31,7 +31,8 @@ print(config_dict["db_connection_string"])
 # Retrieving values from dictionaries =========================================
 # Use index notation, but instead of number, you give the key 
 # and you get the value in return
-colors = {'red': (255, 0, 0), 'green': (0, 255, 0), 'blue': (0, 0, 255)}
+colors = {'red': (255, 0, 0), 'green': (0, 255, 0), 
+          'blue': (0, 0, 255)}
 
 print(colors['red'])      # prints (255, 0, 0)
 print(colors['green'])    # prints (0, 255, 0)
