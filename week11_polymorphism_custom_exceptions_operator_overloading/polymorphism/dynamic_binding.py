@@ -1,15 +1,16 @@
-
 class A:
-    def hello():
-        print('HELLO A')
-
+    # def hello(self):
+    #     print('HELLO A')
+    pass
 class B(A):
-    def hello():
-        print('HELLO B')
+    # def hello(self):
+    #     print('HELLO B')
+    pass
 
 class C(B):
-    def hello():
-        print('HELLO C')
+    # def hello(self):
+    #     print('HELLO C')
+    pass
 
 def main():
     # A instance
@@ -22,7 +23,9 @@ def main():
     var3 = C()
 
     # Which version of hello() is called right now?
-    var3.hello()
+    #var3.hello()
+
+    print(isinstance(var3, A))
 
 if __name__ == '__main__':
     main()

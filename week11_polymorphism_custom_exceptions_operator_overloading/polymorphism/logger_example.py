@@ -10,16 +10,26 @@ class FileLogger:
         print("Writing to file:", message)
 
 class NetworkLogger:
+    def write(self, msg):
+        print("Sending over network:", msg)
+
+class PrinterLogger:
     def write(self, message):
-        print("Sending over network:", message)
+        print("Sending data to printer: ", message)
+
+class Test:
+    pass
 
 def main(): 
-
     file_logger1 = FileLogger()
     nw_logger1 = NetworkLogger()
+    p_logger1 = PrinterLogger()
+    test1 = Test()
 
     log(file_logger1)
     log(nw_logger1)
+    log(p_logger1)
+    log(test1)
 
 def log(writer):
     writer.write("System started")
