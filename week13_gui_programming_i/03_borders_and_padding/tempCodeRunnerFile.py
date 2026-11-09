@@ -1,0 +1,1 @@
+Hello World', 'borderwidth': 5, 'relief':'raised'
